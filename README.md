@@ -201,17 +201,13 @@ the console. These are executed as follows:
 
 .. code:: shell
 
-    mvision-edr-activity-feed --url https://api-int-cop.soc.mcafee.com/ --client_id YOUR_CLIENT_ID --client_secret YOUR_CLIENT_SECRET --module samples.generic --loglevel=debug
-
-.. code:: shell
-
-    mvision-edr-activity-feed --url https://api-int-cop.soc.mcafee.com/ --client_id YOUR_CLIENT_ID --client_secret YOUR_CLIENT_SECRET --module samples.individual --loglevel=debug
+    mvision-edr-activity-feed --url https://api.soc.trellix.com --client_id YOUR_CLIENT_ID --client_secret YOUR_CLIENT_SECRET --module samples.emailsender --loglevel=debug
 
 You can also mix several modules in a single call:
 
 .. code:: shell
 
-    mvision-edr-activity-feed --url https://api-int-cop.soc.mcafee.com/ --client_id YOUR_CLIENT_ID --client_secret YOUR_CLIENT_SECRET --module samples.generic --module samples.individual --loglevel=debug
+    mvision-edr-activity-feed --url https://api.soc.trellix.com --client_id YOUR_CLIENT_ID --client_secret YOUR_CLIENT_SECRET --module samples.generic --module samples.individual --loglevel=debug
 
 ## PARSING RULE ON McAfee SIEM
 
