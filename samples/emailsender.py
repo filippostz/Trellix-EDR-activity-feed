@@ -24,7 +24,9 @@ def send_threat(event):
     mailtext['From'] = sender
     mailtext['Subject'] = subject
 
-    with smtplib.SMTP(smtp_server, smtp_port) as mail_service:
+    with smtplib.SMTP_SSL(smtp_server, smtp_port, context=context) as mail_service:
         mail_service.login(smtp_username, smtp_password)
         mail_service.sendmail(sender, receivers, mailtext.as_string())
         logging.info("EVENT: %s", event)
+        
+     
